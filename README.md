@@ -4,6 +4,20 @@ WorkStepper lets you make room for a new task without rearranging your existing 
 
 It supports **GNOME Shell 51**, with dynamic or fixed workspaces.
 
+## See it in action
+
+**Make room for a new task.** Tap **Super + Enter** to create an empty workspace on the right and switch to it. Here, Overview opens on arrival.
+
+![Create a workspace and switch to Overview](media/01-create-workspace.gif)
+
+**Give a window its own space.** Add **Shift** to carry the focused window with you, leaving the other windows in place.
+
+![Move the focused window into a new workspace](media/02-move-window.gif)
+
+**Start at either end.** Hold **Super + Enter** for the far right or **Super + Backspace** for the far left. An empty end workspace is reused; an occupied end gets a new workspace beyond it.
+
+![Reuse the empty last workspace and create before the occupied first workspace](media/03-create-at-ends.gif)
+
 ## How it works
 
 A workspace action creates an empty workspace in the chosen position and switches to it. If that position already has an empty workspace, WorkStepper reuses it. Occupied workspaces keep their windows.
