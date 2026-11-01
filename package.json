@@ -1,0 +1,10 @@
+{
+  "name": "workstepper",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js && glib-compile-schemas --strict extension/schemas && GSETTINGS_BACKEND=memory gjs -m tests/settings-gjs.js",
+    "test:shell": "bash tests/run-shell-smoke.sh",
+    "pack": "bash scripts/pack.sh"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "uuid": "workspace-step@drkhn",
+  "name": "WorkStepper",
+  "description": "Create or reuse adjacent or end workspaces, optionally carrying a window; close workspaces with or without their windows. Edit shortcuts, derive moving shortcuts with a global modifier, and choose opening views separately for creation, moving, and other empty-workspace switches.",
+  "shell-version": [
+    "51"
+  ],
+  "version": 13,
+  "settings-schema": "org.gnome.shell.extensions.workspace-step",
+  "url": "https://github.com/drkhn1234/WorkStepper"
+}

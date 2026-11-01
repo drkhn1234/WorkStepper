@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.workspace-step" path="/org/gnome/shell/extensions/workspace-step/">
+    <key name="window-modifier" type="s">
+      <choices><choice value="shift"/><choice value="control"/><choice value="alt"/><choice value="none"/></choices>
+      <default>'shift'</default>
+      <summary>Modifier added to workspace shortcuts to carry the focused window</summary>
+    </key>
+    <key name="effective-window-left" type="as">
+      <default>['&lt;Super&gt;&lt;Shift&gt;BackSpace']</default>
+      <summary>Effective window-moving shortcut on the left</summary>
+    </key>
+    <key name="effective-window-right" type="as">
+      <default>['&lt;Super&gt;&lt;Shift&gt;Return']</default>
+      <summary>Effective window-moving shortcut on the right</summary>
+    </key>
+    <key name="creation-view" type="s">
+      <choices><choice value="overview"/><choice value="app-grid"/><choice value="none"/></choices>
+      <default>'overview'</default>
+      <summary>View to open after creating or reusing an empty workspace</summary>
+    </key>
+    <key name="window-creation-view" type="s">
+      <choices><choice value="overview"/><choice value="app-grid"/><choice value="none"/></choices>
+      <default>'none'</default>
+      <summary>View to open after moving a window to a new or reused workspace</summary>
+    </key>
+    <key name="workspace-step-close" type="as">
+      <default>['&lt;Super&gt;Delete']</default>
+      <summary>Close the active workspace; hold to close its windows too</summary>
+    </key>
+    <key name="long-press-duration" type="u">
+      <range min="75" max="2000"/>
+      <default>175</default>
+      <summary>Time in milliseconds before a shortcut becomes a long press</summary>
+    </key>
+    <key name="empty-workspace-view" type="s">
+      <choices><choice value="overview"/><choice value="app-grid"/><choice value="none"/></choices>
+      <default>'overview'</default>
+      <summary>View to open when entering an empty workspace from the desktop</summary>
+      <description>Applies to all workspace switches that start on the desktop. Switching within Overview or App Grid keeps the current view. None disables automatic opening.</description>
+    </key>
+    <key name="switch-view" type="s">
+      <choices><choice value="overview"/><choice value="app-grid"/><choice value="none"/></choices>
+      <default>'overview'</default>
+      <summary>View to open after creating or reusing a workspace</summary>
+    </key>
+    <key name="move-view" type="s">
+      <choices><choice value="overview"/><choice value="app-grid"/><choice value="none"/></choices>
+      <default>'none'</default>
+      <summary>View to open after moving the focused window to a workspace</summary>
+    </key>
+    <key name="workspace-step-left" type="as">
+      <default>['&lt;Super&gt;BackSpace']</default>
+      <summary>Create or reuse a workspace on the left and switch to it</summary>
+    </key>
+    <key name="workspace-step-right" type="as">
+      <default>['&lt;Super&gt;Return']</default>
+      <summary>Create or reuse a workspace on the right and switch to it</summary>
+    </key>
+    <key name="workspace-step-window-left" type="as">
+      <default>['&lt;Super&gt;&lt;Shift&gt;BackSpace']</default>
+      <summary>Move the focused window to a new or empty workspace on the left</summary>
+    </key>
+    <key name="workspace-step-window-right" type="as">
+      <default>['&lt;Super&gt;&lt;Shift&gt;Return']</default>
+      <summary>Move the focused window to a new or empty workspace on the right</summary>
+    </key>
+    <key name="search-after-switch" type="b">
+      <default>true</default>
+      <summary>Open overview search after creating or reusing a workspace</summary>
+    </key>
+    <key name="search-after-move" type="b">
+      <default>false</default>
+      <summary>Open overview search after moving the focused window</summary>
+    </key>
+  </schema>
+</schemalist>
